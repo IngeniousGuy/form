@@ -17,7 +17,7 @@ input:focus,textarea:focus{
 #head-tag{
     display:flex;
     align-items: center;
-    background-color: #2c2c9b;
+    background-color: #2c7c9b;
 }
 body{
     margin:0;
@@ -48,6 +48,7 @@ body{
 .fmg-details{
     padding-left: 100px;
     background-color:rgb(17, 94, 116);
+    box-shadow: 10px 10px rgb(10, 66, 82) ;
 }
 #parent-details,#academic-details,#professional-details,#syear,#sem3,#sem4,#tyear,#sem5,#sem6,#fnyear,#sem7,#sem8{
     padding-left:50px;
@@ -68,4 +69,7 @@ body{
 #send-btn:hover{
     cursor:pointer;
     background-color:#9c0606;
+}
+#student a{
+    text-decoration: none;
 }
