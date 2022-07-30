@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+  <body>
+      <header id="head-tag">
+        <div class="img-heading"><img src="images/Ltcelogo.png"></img></div>
+        <h1 class="img-heading"id="heading">MENTOR-STUDENT INFORMATION</h1>
+      </header>
+      <div id="universal">
+        <form autocomplete="off" id="form1" method="POST" action="https://script.google.com/macros/s/AKfycbx8uV7Vk-RILOQISjRGPBZH-U872Xqdi54BjXiQPbfR9mOfy19LjABXfuo6reYA1Gs-rg/exec">
+          <label>Name of mentor</label><input name="MentorName" class="form-input" type="text" placeholder="MentorName" required><br>
+
+          <h3>Personal Details</h3>
+
+          <label>Student Name</label> <input name="Name" class="form-input" type="text" placeholder="Name" required><br>
+          <label>Date of Birth</label> <input name="DoB" class="form-input" type="date" placeholder="DOB" required><br>
+          <label>Year of Admission </label> <input name="Year-admission" class="form-input" type="number" placeholder="Year of admission" required><br>
+          <label>Contact Number</label> <input name="Contact-no" class="form-input" type="tel" placeholder="Contact no" required><br>
+
+          <label>Email id:</label> <input name="Email" class="form-input" type="email" placeholder="Email" required><br>
+          <label for="address">Permanent Address:</label><br>
+          <textarea id='address' name="address" rows="5" cols="20" class="form-input"  placeholder="Address" required></textarea><br>
+
+          <label>Medical Details:</label>
+          <input name="Medical-history" class="form-input" type="text" id="medical"  value="null"><br>
+          <h3>Parents/Guardian details:</h3>
+          <div id="parent-details">
+            <!-- Father-details -->
+            <h3>Father's details</h3>
+            <div id="father-details" class="fmg-details"> 
+              <label for="Father-Name">Father's Name</label>
+              <input name="Father-Name" type="text" class="form-input" placeholder="Name" required><br>
+              <label for="Father-income">Income(per annum)</label>
+              <input name="Father-income" type="number" class="form-input" placeholder="Annual Income" required><br>
+              <label for="Father-occupation">Occupation</label>
+              <input name="Father-occupation" type="text" class="form-input" placeholder="Occupation" required><br>
+              <label for="Father-phone">Phone Number</label>
+              <input name="Father-phone" type="tel" class="form-input" placeholder="Phone Number" ><br>
+              <label for="Father-email">Email</label>
+              <input name="Father-email" type="email" class="form-input" placeholder="Email"><br>
+            </div>
+            <!-- Mother-details -->
+            <h3>Mother's details</h3>
+            <div id="mother-details" class="fmg-details"> 
+              <label for="Mother-Name">Mother's Name</label>
+              <input name="Mother-Name" type="text" class="form-input" placeholder="Name" required><br>
+              <label for="Mother-income">Income(per annum)</label>
+              <input name="Mother-income" type="number" class="form-input" placeholder="Annual Income" required><br>
+              <label for="Mother-occupation">Occupation</label>
+              <input name="Mother-occupation" type="text" class="form-input" placeholder="Occupation" required><br>
+              <label for="Mother-phone">Phone Number</label>
+              <input name="Mother-phone" type="tel" class="form-input" placeholder="Phone Number"><br>
+              <label for="Mother-email">Email</label>
+              <input name="Mother-email" type="email" class="form-input" placeholder="Email"><br>
+            </div>
+            <!-- guardian details -->
+            <h3>Guardian's details</h3>
+            <div id="guardian-details" class="fmg-details"> 
+              <label for="Guardian-Name">Guardian's Name</label>
+              <input name="Guardian-Name" type="text" class="form-input" placeholder="Name"><br>
+              <label for="Guardian-income">Income(per annum)</label>
+              <input name="Guardian-income" type="number" class="form-input" placeholder="Annual Income"><br>
+              <label for="Guardian-occupation">Occupation</label>
+              <input name="Guardian-occupation" type="text" class="form-input" placeholder="Occupation"><br>
+              <label for="Guardian-phone">Phone Number</label>
+              <input name="Guardian-phone" type="tel" class="form-input" placeholder="Phone Number"><br>
+              <label for="Guardian-email">Email</label>
+              <input name="Guardian-email" type="email" class="form-input" placeholder="Email"><br>
+            </div>
+          </div>
+
+          <!-- Academic-Details -->
+          <h3>Academic-Details</h3>
+          <div id="academic-details">
+            <h3>SSC</h3>
+            <div id="ssc-details" class="fmg-details">
+              <label for="SSC-Year">Year of passing</label>
+              <input name="SSC-Year" type="number" class="form-input" placeholder="Year of Passing" required><br>
+              <label for="SSC-Percentage">Percentage of marks</label>
+              <input name="SSC-Percentage" type="text" class="form-input" placeholder="Percentage" required><br>
+              <label for="SSC-Class">Class</label>
+              <input name="SSC-Class" type="text" class="form-input" placeholder="Class" required><br>
+              <label for="SSC-Board">Board</label>
+              <input name="SSC-Board" type="text" class="form-input" placeholder="Board" required><br>
+            </div>
+            <h3>HSC</h3>
+            <div id="HSC-details" class="fmg-details">
+              <label for="HSC-Year">Year of passing</label>
+              <input name="HSC-Year" type="number" class="form-input" placeholder="Year of Passing"><br>
+              <label for="HSC-Percentage">Percentage of marks</label>
+              <input name="HSC-Percentage" type="text" class="form-input" placeholder="Percentage"><br>
+              <label for="HSC-class">Class</label>
+              <input name="HSC-class" type="text" class="form-input" placeholder="Class"><br>
+              <label for="HSC-Board">Board</label>
+              <input name="HSC-Board" type="text" class="form-input" placeholder="Board"><br>
+            </div>
+            <h3>FE/Diploma</h3>
+            <div id="FE/Diploma-details" class="fmg-details">
+              <label for="FE/Diploma-Year">Year of passing</label>
+              <input name="FE/Diploma-Year" type="number" class="form-input" placeholder="Year of Passing" required><br>
+              <label for="FE/Diploma-Percentage">Percentage of marks</label>
+              <input name="FE/Diploma-Percentage" type="text" class="form-input" placeholder="Percentage" required><br>
+              <label for="FE/Diploma-class">Class</label>
+              <input name="FE/Diploma-class" type="text" class="form-input" placeholder="Class" required><br>
+              <label for="FE/Diploma-University">Board</label>
+              <input name="FE/Diploma-University" type="text" class="form-input" placeholder="University" required><br>
+            </div>
+          </div>
+
+          <!-- professional details -->
+          <h3>Professional Details </h3>
+          <div id="professional-details">
+
+            <!-- second year -->
+            <h3>Second Year</h3>
+            <div id="syear">
+              <label for="SE-year of addmission">Year Of Addmission</label>
+              <input name="SE-year of addmission" type="number" class="form-input" placeholder="year of addmission"> <br>
+              <h3>Semester 3</h3>
+              <div id="sem3" class="fmg-details">
+                <label for="3rd sem SGPI">Reslt(SGPI)</label>
+                <input name="3rd sem SGPI" type="number" class="form-input" placeholder="SGPI" ><br>
+                <label for="3rd sem-year of passing">Year Of Passing</label>
+                <input name="3rd sem-year of passing" type="number" class="form-input" placeholder="year of passing" ><br>
+              </div>
+              <h3>Semester 4</h3>
+              <div id="sem4" class="fmg-details">
+                <label for="4th sem SGPI">Reslt(SGPI)</label>
+                <input name="4th sem SGPI" type="number" class="form-input" placeholder="SGPI" ><br>
+                <label for="4th sem year of passing">Year Of Passing</label>
+                <input name="4th sem year of passing" type="number" class="form-input" placeholder="year of passing"><br>
+              </div>
+            </div>
+          <!-- Third year -->
+          <h3>Third Year</h3>
+            <div id="tyear">
+              <label for="TE-year of addmission">Year Of Addmission</label>
+              <input name="TE-year of addmission" type="number" class="form-input" placeholder="year of addmission"> <br>
+              <h3>Semester 5</h3>
+              <div id="sem5" class="fmg-details">
+                <label for="5th sem SGPI">Reslt(SGPI)</label>
+                <input name="5th sem SGPI" type="number" class="form-input" placeholder="SGPI" ><br>
+                <label for="5th sem-year of passing">Year Of Passing</label>
+                <input name="5th sem-year of passing" type="number" class="form-input" placeholder="year of passing" ><br>
+              </div>
+              <h3>Semester 6</h3>
+              <div id="sem6" class="fmg-details">
+                <label for="6th sem SGPI">Reslt(SGPI)</label>
+                <input name="6th sem SGPI" type="number" class="form-input" placeholder="SGPI" ><br>
+                <label for="6th sem year of passing">Year Of Passing</label>
+                <input name="6th sem year of passing" type="number" class="form-input" placeholder="year of passing"><br>
+              </div>
+            </div>
+          <!-- fourth year -->
+          <h3>Fourth Year</h3>
+          <div id="fnyear">
+            <label for="BE-year of addmission">Year Of Addmission</label>
+            <input name="BE-year of addmission" type="number" class="form-input" placeholder="year of addmission"> <br>
+            <h3>Semester 7</h3>
+            <div id="sem7" class="fmg-details">
+              <label for="7th sem SGPI">Reslt(SGPI)</label>
+              <input name="7th sem SGPI" type="number" class="form-input" placeholder="SGPI" ><br>
+              <label for="7th sem-year of passing">Year Of Passing</label>
+              <input name="7th sem-year of passing" type="number" class="form-input" placeholder="year of passing" ><br>
+            </div>
+            <h3>Semester 8</h3>
+            <div id="sem8" class="fmg-details">
+              <label for="8th sem SGPI">Reslt(SGPI)</label>
+              <input name="8th sem SGPI" type="number" class="form-input" placeholder="SGPI" ><br>
+              <label for="8th sem year of passing">Year Of Passing</label>
+              <input name="8th sem year of passing" type="number" class="form-input" placeholder="year of passing"><br>
+            </div>
+          </div>
+        </div>
+
+          <div id="btn-div"><button class="form-input" id="send-btn" type="submit">Send</button></div>
+        </form>
+    </div>
+  </body>
+</html>
